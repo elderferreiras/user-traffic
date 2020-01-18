@@ -7,11 +7,13 @@ export const fetchUsersStart = () => {
     };
 };
 
-export const fetchUsersSuccess = (users) => {
+export const fetchUsersSuccess = ({users, fetched, total}) => {
     return {
         type: actionTypes.FETCH_USERS_SUCCESS,
         payload: {
-            users: users
+            users,
+            fetched,
+            total,
         }
     };
 };
@@ -23,7 +25,7 @@ export const fetchUsersFail = (error) => {
     };
 };
 
-export const fetchUsers = (limit = 20, offset = 0) => {
+export const fetchUsers = (limit = 12, offset = 0) => {
     return (dispatch) => {
         dispatch(fetchUsersStart());
 

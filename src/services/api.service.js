@@ -2,15 +2,17 @@ import USERS from '../data/users';
 import LOGS from '../data/logs';
 import { LogType } from '../enums/LogType';
 import { parseCurrency } from '../utility/utility';
-
+import * as _ from 'lodash';
 /**
  * Return a user with statistics calculated.
  * @param limit
  * @param offset
  * @returns {Promise<*>}
  */
-export const allUsers = async (limit = 20, offset = 0) => {
-    return await USERS.slice(offset, limit).map(user => {
+export const allUsers = async (limit = 12, offset = 0) => {
+    USERS.sort((a, b) =>  b.id - a.id);
+
+    const users = await _.drop(USERS, offset).slice(0, limit).map(user => {
         const userLogs = LOGS.filter(log => log.user_id === user.id);
         const impressionsTotal = getImpressionsTotal(userLogs);
         const conversionsTotal = getConversionsTotal(userLogs);
@@ -25,6 +27,12 @@ export const allUsers = async (limit = 20, offset = 0) => {
             conversionsPerDay
         }
     });
+
+    return {
+        users,
+        fetched: users.length,
+        total: USERS.length
+    };
 };
 
 /**

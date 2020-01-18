@@ -4,6 +4,8 @@ import User from '../../classes/User';
 
 const initialState = {
     users: [],
+    total: 0,
+    fetched: 0,
     loading: false,
     error: false
 };
@@ -11,7 +13,7 @@ const initialState = {
 const userReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.FETCH_USERS_START:
-            return fetchUsersState(state);
+            return fetchUsersStart(state);
         case actionTypes.FETCH_USERS_SUCCESS:
             return fetchUsersSuccess(state, action);
         case actionTypes.FETCH_USERS_FAIL:
@@ -21,18 +23,22 @@ const userReducer = (state = initialState, action) => {
     }
 };
 
-const fetchUsersState = (state) => {
+const fetchUsersStart = (state) => {
     return updateObject(state, {
         loading: true,
-        error: null
+        error: null,
+        total: 0,
+        fetched: 0
     });
 };
 
 const fetchUsersSuccess = (state, action) => {
-    let users = state.users.concat(action.payload.users.map(user => new User(user)));
+    let users = action.payload.users.map(user => new User(user));
 
     return updateObject(state, {
         users: users,
+        total: action.payload.total,
+        fetched: action.payload.fetched,
         loading: false,
         error: null
     });
@@ -41,7 +47,9 @@ const fetchUsersSuccess = (state, action) => {
 const fetchUsersFail = (state, action) => {
     return updateObject(state,{
         loading: false,
-        error: action.payload.error
+        error: action.payload.error,
+        total: 0,
+        fetched: 0
     });
 };
 

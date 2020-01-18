@@ -2,21 +2,12 @@ html, body {
   background-color: #f7f7f7!important;
 }
 
-p {
-  align-content: center;
-  background-color: #495285;
-  color: #fff;
+.users-list-container {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  min-height: 6em;
 }
 
-p > span {
-  opacity: 0.4;
-  text-align: center;
-}
-
-.menu {
-  background-color: rgb(0, 14, 86) !important;
+.user-list {
+  flex: 1
 }
