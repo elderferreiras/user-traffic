@@ -13,10 +13,9 @@ const Users = () => {
     }, [dispatch]);
 
     return (
-        <Grid stackable centered>
+        <Grid columns={3} centered stackable>
             {users.map(user => (
-
-                <Grid.Column key={user.id} computer={4} mobile={8} tablet={6} >
+                <Grid.Column key={user.id}>
                     <User {...user}/>
                 </Grid.Column>
             ))}
