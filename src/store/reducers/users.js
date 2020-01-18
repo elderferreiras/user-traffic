@@ -1,5 +1,6 @@
 import * as actionTypes from '../actions/action-types';
 import { updateObject } from '../../utility/utility';
+import User from '../../classes/User';
 
 const initialState = {
     users: [],
@@ -28,7 +29,7 @@ const fetchUsersState = (state) => {
 };
 
 const fetchUsersSuccess = (state, action) => {
-    let users = state.users.concat(action.payload.users);
+    let users = state.users.concat(action.payload.users.map(user => new User(user)));
 
     return updateObject(state, {
         users: users,

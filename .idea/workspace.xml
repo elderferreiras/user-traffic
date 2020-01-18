@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/user-traffic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/action-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/utility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_avatar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_chart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_statistics.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_user.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/AppMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/Avatar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/ConversionsChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/Statistics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/utility.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,17 +50,18 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -79,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="3772000" />
+      <workItem from="1579357476010" duration="18483000" />
     </task>
     <servers />
   </component>

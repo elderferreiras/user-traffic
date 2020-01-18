@@ -1,0 +1,18 @@
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 500rem;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2em;
+  margin-bottom: 2em;
+
+  .avatar-initials {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 45px;
+  }
+}

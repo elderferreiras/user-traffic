@@ -1,0 +1,39 @@
+.statistics-container {
+  margin-top: -2em !important;
+  .statistic {
+    display: flex;
+    flex-direction: column;
+
+    .value {
+      font-weight: bold;
+      font-size: 17px;
+      text-align: right;
+
+      &.orange {
+        color: #F2711C;
+      }
+
+      &.blue {
+        color: #2185D0;
+      }
+
+      &.green {
+        color: #21BA45;
+      }
+    }
+
+    .label {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: right;
+      margin-top: -0.4em;
+    }
+
+    &.revenue {
+      margin-top: 0.5em;
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.user-card {
+  margin: 0 auto !important;
+  .user-container {
+    .user-occupation {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      padding-left: 0.4em;
+    }
+  }
+}

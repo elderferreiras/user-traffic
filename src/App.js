@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.scss';
-import Home from './containers/Home';
+import { Container, Divider } from 'semantic-ui-react'
+import Users from './containers/Users';
 
 function App() {
-  return <Home/>;
+    return (
+        <Fragment>
+            <Container>
+                <Divider/>
+                <Users/>
+            </Container>
+        </Fragment>
+    );
 }
 
 export default App;
