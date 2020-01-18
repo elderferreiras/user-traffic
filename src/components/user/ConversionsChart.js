@@ -1,40 +1,17 @@
-import React from 'react'
-import { Chart } from 'react-charts'
+import React from 'react';
+import { LineChart, Line } from 'recharts';
 
-const ConversionsChart = () => {
-    const data = React.useMemo(
-        () => [
-            {
-                label: 'Series 1',
-                data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
-            }
-        ],
-        []
-    );
-
-    const getSeriesStyle = React.useCallback(
-        series => ({
-            color: 'black'
-        }),
-        []
-    );
-
-    const axes = React.useMemo(
-        () => [
-            {primary: true, type: 'linear', position: 'bottom', show: false},
-            {type: 'linear', position: 'left', show: false}
-        ],
-        []
-    );
-
+const ConversionsChart = (props) => {
     return (
         <div className="chart-container">
-            <Chart data={data} axes={axes} getSeriesStyle={getSeriesStyle} tooltip/>
+            <LineChart width={150} height={50} data={props.conversionsPerDay.data}>
+                <Line type="monotone" dataKey="conversions" stroke="#000000" strokeWidth={1} dot={false}/>
+            </LineChart>
             <div className="chart-footer">
-                Conversions 4/12 - 4/30
+                Conversions {props.conversionsPerDay.range.from} - {props.conversionsPerDay.range.to}
             </div>
         </div>
-    )
+    );
 };
 
 export default ConversionsChart;

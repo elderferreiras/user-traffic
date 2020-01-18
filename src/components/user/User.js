@@ -22,10 +22,10 @@ const User = (props) => {
                     <Grid divided='vertically'>
                         <Grid.Row columns={2}>
                             <Grid.Column>
-                                <ConversionsChart/>
+                                <ConversionsChart {...props}/>
                             </Grid.Column>
                             <Grid.Column className="statistics-container">
-                                <Statistics/>
+                                <Statistics {...props}/>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
