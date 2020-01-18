@@ -33,7 +33,7 @@ export const allUsers = async (limit = 20, offset = 0) => {
  * @returns {*}
  */
 export const getImpressionsTotal = (userLogs) => {
-    return userLogs.filter(log => log.type === LogType.IMPRESSION).length;
+    return userLogs.filter(log => log.type === LogType.IMPRESSION).length.toLocaleString();
 };
 
 /**
@@ -42,7 +42,7 @@ export const getImpressionsTotal = (userLogs) => {
  * @returns {*}
  */
 export const getConversionsTotal = (userLogs) => {
-    return userLogs.filter(log => log.type === LogType.CONVERSION).length;
+    return userLogs.filter(log => log.type === LogType.CONVERSION).length.toLocaleString();
 };
 
 /**
