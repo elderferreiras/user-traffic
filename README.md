@@ -26,7 +26,7 @@ This repo contains the source code and documentation powering [user-traffic](htt
 
 ### Test 
 
-1. Run `npm test` from the project root. (This will all the tests under every `__tests__` folder).
+1. Run `npm test` from the project root. (This will run all tests under every `__tests__` folder).
 
 
 ## Components
