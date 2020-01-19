@@ -2,6 +2,7 @@ import USERS from '../data/users';
 import LOGS from '../data/logs';
 import { LogType } from '../enums/LogType';
 import * as _ from 'lodash';
+import { getDate } from '../utility/utility';
 
 
 /**
@@ -9,7 +10,7 @@ import * as _ from 'lodash';
  * @param limit
  * @param offset
  * @param sort
- * @returns {Promise<*>}
+ * @returns {{total: *, users: *, fetched: *}}
  */
 export const allUsers = (limit = 12, offset = 0, sort = "") => {
     let scanAfterStats = false;
@@ -37,9 +38,13 @@ export const allUsers = (limit = 12, offset = 0, sort = "") => {
 
         users = _.drop(allUsers, offset).slice(0, limit);
     } else {
-        users = _.drop(USERS, offset).slice(0, limit).map(user => {
-            return assembleUser(user);
-        });
+        try {
+            users = _.drop(USERS, offset).slice(0, limit).map(user => {
+                return assembleUser(user);
+            });
+        } catch (err) {
+            window.alert(err.message);
+        }
     }
 
 
@@ -110,7 +115,7 @@ export const getConversionsPerDay = (userLogs) => {
 
     //Count conversions by date
     for (let log of userLogs) {
-        let date = new Date(log.time);
+        let date = getDate(log.time);
         let hash = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
 
         if (totalPerDay[hash] === undefined) {
