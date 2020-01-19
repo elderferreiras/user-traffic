@@ -33,14 +33,14 @@ export const allUsers = (limit = 12, offset = 0, sort = "") => {
 
     if (scanAfterStats) {
         const allUsers = USERS.map(user => {
-            return assembleUser(user);
+            return addUserStatistics(user);
         }).sort((a, b) => b[sort] - a[sort]);
 
         users = _.drop(allUsers, offset).slice(0, limit);
     } else {
         try {
             users = _.drop(USERS, offset).slice(0, limit).map(user => {
-                return assembleUser(user);
+                return addUserStatistics(user);
             });
         } catch (err) {
             window.alert(err.message);
@@ -55,8 +55,12 @@ export const allUsers = (limit = 12, offset = 0, sort = "") => {
     };
 };
 
-
-function assembleUser(user) {
+/**
+ * Return user with statistics.
+ * @param user
+ * @returns {{conversionsPerDay: *, revenue: *, conversionsTotal: *, impressionsTotal: *}}
+ */
+function addUserStatistics(user) {
     const userLogs = LOGS.filter(log => log.user_id === user.id);
     const impressionsTotal = getImpressionsTotal(userLogs);
     const conversionsTotal = getConversionsTotal(userLogs);
@@ -67,7 +71,7 @@ function assembleUser(user) {
         ...user,
         impressionsTotal,
         conversionsTotal,
-        revenue: revenue,
+        revenue,
         conversionsPerDay
     }
 }

@@ -4,7 +4,7 @@ import { configure, mount } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import { allUsers } from '../../services/api.service';
+import * as API from '../../services/api.service';
 import Users from '../Users';
 import User from '../../components/user/User';
 import Loading from '../../components/ui/Loading';
@@ -44,7 +44,7 @@ describe('<Users/>', () => {
     });
 
     it('should render users grid with 12 users', () => {
-        const response = allUsers();
+        const response = API.allUsers();
 
         const store = mockStore({
             usersReducer: {

@@ -26,7 +26,7 @@ const userReducer = (state = initialState, action) => {
 const fetchUsersStart = (state) => {
     return updateObject(state, {
         loading: true,
-        error: null,
+        error: false,
         total: 0,
         fetched: 0
     });
@@ -40,7 +40,7 @@ const fetchUsersSuccess = (state, action) => {
         total: action.payload.total,
         fetched: action.payload.fetched,
         loading: false,
-        error: null
+        error: false
     });
 };
 
