@@ -17,6 +17,7 @@
     "react-test-renderer": "^16.12.0",
     "recharts": "^2.0.0-beta.1",
     "redux": "^4.0.5",
+    "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.88.2",
     "semantic-ui-sass": "^2.4.2"

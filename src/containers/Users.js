@@ -9,7 +9,7 @@ import SitePagination from '../components/ui/SitePagination';
 const Users = (props) => {
     const users = useSelector(state => state.usersReducer.users);
     const loading = useSelector(state => state.usersReducer.loading);
-    const error = useSelector(state => state.usersReducer.loading);
+    const error = useSelector(state => state.usersReducer.error);
     const total = useSelector(state => state.usersReducer.total);
     const fetched = useSelector(state => state.usersReducer.fetched);
 

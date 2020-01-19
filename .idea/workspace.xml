@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/user/__tests__/User.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,83 +61,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.&lt;User/&gt;.should have no name or occupation">
-    <configuration name="&lt;ConversionsChart/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.&lt;Users/&gt;.should not render users because it is loading">
+    <configuration name="App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/ConversionsChart.test.js" />
+      <test-file value="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" />
       <test-names>
-        <test-name value="&lt;ConversionsChart/&gt;" />
+        <test-name value="App" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;ConversionsChart/&gt;.it render &lt;LineChart/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="App.should render a startup component if startup is not complete" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/ConversionsChart.test.js" />
+      <test-file value="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" />
       <test-names>
-        <test-name value="&lt;ConversionsChart/&gt;" />
-        <test-name value="it render &lt;LineChart/&gt;" />
+        <test-name value="App" />
+        <test-name value="should render a startup component if startup is not complete" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;ConversionsChart/&gt;.should not render &lt;LineChart/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Users/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" />
+      <test-names>
+        <test-name value="&lt;Users/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Users/&gt;.should not render users because it is loading" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/ConversionsChart.test.js" />
+      <test-file value="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" />
       <test-names>
-        <test-name value="&lt;ConversionsChart/&gt;" />
-        <test-name value="should not render &lt;LineChart/&gt;" />
+        <test-name value="&lt;Users/&gt;" />
+        <test-name value="should not render users because it is loading" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;User/&gt;.should have no name or occupation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Users/&gt;.should render a startup component if startup is not complete" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/User.test.js" />
+      <test-file value="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" />
       <test-names>
-        <test-name value="&lt;User/&gt;" />
-        <test-name value="should have no name or occupation" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;User/&gt;.should load &lt;Avatar&gt;, &lt;ConversionsChart&gt;, and &lt;Statistics&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/User.test.js" />
-      <test-names>
-        <test-name value="&lt;User/&gt;" />
-        <test-name value="should load &lt;Avatar&gt;, &lt;ConversionsChart&gt;, and &lt;Statistics&gt;" />
+        <test-name value="&lt;Users/&gt;" />
+        <test-name value="should render a startup component if startup is not complete" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.&lt;User/&gt;.should have no name or occupation" />
-        <item itemvalue="Jest.&lt;User/&gt;.should load &lt;Avatar&gt;, &lt;ConversionsChart&gt;, and &lt;Statistics&gt;" />
-        <item itemvalue="Jest.&lt;ConversionsChart/&gt;" />
-        <item itemvalue="Jest.&lt;ConversionsChart/&gt;.it render &lt;LineChart/&gt;" />
-        <item itemvalue="Jest.&lt;ConversionsChart/&gt;.should not render &lt;LineChart/&gt;" />
+        <item itemvalue="Jest.&lt;Users/&gt;.should not render users because it is loading" />
+        <item itemvalue="Jest.&lt;Users/&gt;" />
+        <item itemvalue="Jest.&lt;Users/&gt;.should render a startup component if startup is not complete" />
+        <item itemvalue="Jest.App.should render a startup component if startup is not complete" />
+        <item itemvalue="Jest.App" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="46044000" />
+      <workItem from="1579357476010" duration="52538000" />
     </task>
     <servers />
   </component>
