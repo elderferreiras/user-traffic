@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/Error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/Loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/UsersPagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/style/scss/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/SiteHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/SiteMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Sort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/style/scss/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/scss/_body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/scss/_user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/scss/_user.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/style/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/AppMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/UsersPagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/SitePagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/Statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Statistics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/api.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/users.js" afterDir="false" />
@@ -37,11 +40,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="29844000" />
+      <workItem from="1579357476010" duration="35464000" />
     </task>
     <servers />
   </component>

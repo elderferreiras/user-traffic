@@ -1,39 +1,71 @@
 import USERS from '../data/users';
 import LOGS from '../data/logs';
 import { LogType } from '../enums/LogType';
-import { parseCurrency } from '../utility/utility';
 import * as _ from 'lodash';
+
+
 /**
  * Return a user with statistics calculated.
  * @param limit
  * @param offset
+ * @param sort
  * @returns {Promise<*>}
  */
-export const allUsers = async (limit = 12, offset = 0) => {
-    USERS.sort((a, b) =>  b.id - a.id);
+export const allUsers = (limit = 12, offset = 0, sort = "") => {
+    let scanAfterStats = false;
 
-    const users = await _.drop(USERS, offset).slice(0, limit).map(user => {
-        const userLogs = LOGS.filter(log => log.user_id === user.id);
-        const impressionsTotal = getImpressionsTotal(userLogs);
-        const conversionsTotal = getConversionsTotal(userLogs);
-        const revenue = getTotalRevenue(userLogs);
-        const conversionsPerDay = getConversionsPerDay(userLogs);
-
-        return {
-            ...user,
-            impressionsTotal,
-            conversionsTotal,
-            revenue,
-            conversionsPerDay
+    // If filtering by name, or no filter is set, then order the whole dataset
+    if (sort.length) {
+        if (sort === 'name') {
+            USERS.sort((a, b) => {
+                return a.name.split(" ").shift().localeCompare(b.name.split(" ").shift())
+            });
+        } else {
+            //If filtering by any other field, then wait to filter after stats are calculated
+            scanAfterStats = true;
         }
-    });
+    } else {
+        USERS.sort((a, b) => b.id - a.id);
+    }
+
+    let users = [];
+
+    if (scanAfterStats) {
+        const allUsers = USERS.map(user => {
+            return assembleUser(user);
+        }).sort((a, b) => b[sort] - a[sort]);
+
+        users = _.drop(allUsers, offset).slice(0, limit);
+    } else {
+        users = _.drop(USERS, offset).slice(0, limit).map(user => {
+            return assembleUser(user);
+        });
+    }
+
 
     return {
-        users,
+        users: users,
         fetched: users.length,
         total: USERS.length
     };
 };
+
+
+function assembleUser(user) {
+    const userLogs = LOGS.filter(log => log.user_id === user.id);
+    const impressionsTotal = getImpressionsTotal(userLogs);
+    const conversionsTotal = getConversionsTotal(userLogs);
+    const revenue = getTotalRevenue(userLogs);
+    const conversionsPerDay = getConversionsPerDay(userLogs);
+
+    return {
+        ...user,
+        impressionsTotal,
+        conversionsTotal,
+        revenue: revenue,
+        conversionsPerDay
+    }
+}
 
 /**
  * Return user's total impressions.
@@ -41,7 +73,7 @@ export const allUsers = async (limit = 12, offset = 0) => {
  * @returns {*}
  */
 export const getImpressionsTotal = (userLogs) => {
-    return userLogs.filter(log => log.type === LogType.IMPRESSION).length.toLocaleString();
+    return userLogs.filter(log => log.type === LogType.IMPRESSION).length;
 };
 
 /**
@@ -65,7 +97,7 @@ export const getTotalRevenue = (userLogs) => {
         total += log.revenue;
     }
 
-    return parseCurrency(total);
+    return total;
 };
 
 /**

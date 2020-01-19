@@ -1,5 +1,6 @@
 .user-card {
   margin: 0 auto !important;
+
   .user-container {
     .user-occupation {
       white-space: nowrap;
@@ -7,6 +8,22 @@
       text-overflow: ellipsis;
       font-weight: bold;
       padding-left: 0.4em;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 840px) {
+  .sorting {
+    width: 100%;
+  }
+
+  .pagination {
+    .label {
+      display: none !important;
+    }
+
+    .pages {
+      text-align: center !important;
     }
   }
 }

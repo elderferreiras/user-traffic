@@ -21,18 +21,21 @@ export const fetchUsersSuccess = ({users, fetched, total}) => {
 export const fetchUsersFail = (error) => {
     return {
         type: actionTypes.FETCH_USERS_FAIL,
-        error: error
+        payload: {
+            error
+        }
     };
 };
 
-export const fetchUsers = (limit = 12, offset = 0) => {
+export const fetchUsers = (limit = 12, offset = 0, sort = "") => {
     return (dispatch) => {
         dispatch(fetchUsersStart());
 
-        API.allUsers(limit, offset).then(response => {
+        try {
+            const response = API.allUsers(limit, offset, sort);
             dispatch(fetchUsersSuccess(response));
-        }).catch(error => {
+        } catch (error) {
             dispatch(fetchUsersFail(error))
-        });
+        }
     }
 };

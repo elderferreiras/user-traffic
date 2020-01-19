@@ -17,7 +17,7 @@ const userReducer = (state = initialState, action) => {
         case actionTypes.FETCH_USERS_SUCCESS:
             return fetchUsersSuccess(state, action);
         case actionTypes.FETCH_USERS_FAIL:
-            return fetchUsersFail(state);
+            return fetchUsersFail(state, action);
         default:
             return state;
     }
@@ -52,8 +52,5 @@ const fetchUsersFail = (state, action) => {
         fetched: 0
     });
 };
-
-
-
 
 export default userReducer;

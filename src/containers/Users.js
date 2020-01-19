@@ -1,32 +1,17 @@
-import React, { useEffect, useState, Fragment } from 'react';
-import * as actions from '../store/actions';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { Fragment } from 'react';
+import { useSelector } from 'react-redux';
 import { Grid, Divider } from 'semantic-ui-react'
 import User from '../components/user/User';
 import Loading from '../components/ui/Loading';
 import Error from '../components/ui/Error';
-import UsersPagination from '../components/ui/UsersPagination';
+import SitePagination from '../components/ui/SitePagination';
 
-const Users = () => {
+const Users = (props) => {
     const users = useSelector(state => state.usersReducer.users);
     const loading = useSelector(state => state.usersReducer.loading);
     const error = useSelector(state => state.usersReducer.loading);
     const total = useSelector(state => state.usersReducer.total);
     const fetched = useSelector(state => state.usersReducer.fetched);
-
-    const [limit, setLimit] = useState(12);
-    const [offset, setOffset] = useState(0);
-    const [page, setPage] = useState(1);
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(actions.fetchUsers(limit, offset))
-    }, [dispatch, limit, offset]);
-
-    useEffect(() => {
-        setOffset((page - 1) * limit);
-    }, [page, limit]);
 
     let content = <Loading/>;
 
@@ -41,13 +26,13 @@ const Users = () => {
                     ))}
                 </Grid>
                 <Divider/>
-                <UsersPagination
-                    page={page}
-                    setPage={setPage}
-                    offset={offset}
+                <SitePagination
+                    page={props.page}
+                    setPage={props.setPage}
+                    offset={props.offset}
                     total={total}
                     fetched={fetched}
-                    limit={limit}/>
+                    limit={props.limit}/>
             </Fragment>
         );
     }

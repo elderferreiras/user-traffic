@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pagination, Grid } from 'semantic-ui-react'
 
-const UsersPagination = (props) => {
+const SitePagination = (props) => {
     const totalPages = Math.ceil(props.total / props.limit);
 
     const pageChangeHandler = (event, data) => {
@@ -12,12 +12,12 @@ const UsersPagination = (props) => {
     const showingUntil = props.offset + props.limit > props.total ? props.total : props.offset + props.limit;
 
     return (
-        <Grid divided='vertically'>
+        <Grid className="pagination" divided='vertically' stackable>
             <Grid.Row columns={2}>
-                <Grid.Column textAlign="left">
+                <Grid.Column className="label" textAlign="left">
                     Showing {totalShowing} to {showingUntil} of {props.total} entries
                 </Grid.Column>
-                <Grid.Column textAlign="right">
+                <Grid.Column className="pages" textAlign="right">
                     <Pagination
                         boundaryRange={0}
                         defaultActivePage={props.page}
@@ -34,4 +34,4 @@ const UsersPagination = (props) => {
     );
 };
 
-export default UsersPagination;
+export default SitePagination;
