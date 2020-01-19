@@ -18,7 +18,7 @@ const Users = (props) => {
     if (!loading) {
         content = (
             <Fragment>
-                <Grid columns={3} centered stackable>
+                <Grid columns={3} stackable>
                     {users.map(user => (
                         <Grid.Column key={user.id}>
                             <User {...user}/>

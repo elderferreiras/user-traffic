@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/__tests__/api.service.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/__tests__/users.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/__tests__/utility.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/__tests__/Users.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/api.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/utility.js" afterDir="false" />
-    </list>
+    <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="55520000" />
+      <workItem from="1579357476010" duration="55764000" />
     </task>
     <servers />
   </component>
