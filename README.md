@@ -27,3 +27,19 @@ This repo contains the source code and documentation powering [user-traffic](htt
 ### Test 
 
 1. Run `npm test` from the project root. (This will all the tests under every `__tests__` folder).
+
+
+### Components
+
+In `user-traffic`, `components` are stateless, while `containers` are stateful.
+
+![alt text](https://elder-patten-ferreira-resume.s3-us-west-2.amazonaws.com/assets/images/experience/projects/user-traffic/user-traffic-components.png)
+
+### Architecture
+
+`user-traffic` uses redux and react-redux to retrieve user data.
+![alt text](https://elder-patten-ferreira-resume.s3-us-west-2.amazonaws.com/assets/images/experience/projects/user-traffic/architecture.png)
+
+### Data
+
+![alt text](https://elder-patten-ferreira-resume.s3-us-west-2.amazonaws.com/assets/images/experience/projects/user-traffic/class-diagram.png)
