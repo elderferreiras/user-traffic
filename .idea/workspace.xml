@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/Avatar.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/User.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/user-traffic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/user-traffic.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/api.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +37,10 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -55,6 +65,86 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Jest.&lt;Avatar/&gt;">
+    <configuration name="&lt;Avatar/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-names>
+        <test-name value="&lt;Avatar/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Avatar/&gt;.should render an empty div" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-names>
+        <test-name value="&lt;Avatar/&gt;" />
+        <test-name value="should render an empty div" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Avatar/&gt;.should render an image" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-names>
+        <test-name value="&lt;Avatar/&gt;" />
+        <test-name value="should render an image" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Avatar/&gt;.should render user's first name initial after image load failed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-names>
+        <test-name value="&lt;Avatar/&gt;" />
+        <test-name value="should render user's first name initial after image load failed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Avatar/&gt;.should render user's first name initial" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-names>
+        <test-name value="&lt;Avatar/&gt;" />
+        <test-name value="should render user's first name initial" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.&lt;Avatar/&gt;" />
+        <item itemvalue="Jest.&lt;Avatar/&gt;.should render user's first name initial after image load failed" />
+        <item itemvalue="Jest.&lt;Avatar/&gt;.should render user's first name initial" />
+        <item itemvalue="Jest.&lt;Avatar/&gt;.should render an empty div" />
+        <item itemvalue="Jest.&lt;Avatar/&gt;.should render an image" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="38333000" />
+      <workItem from="1579357476010" duration="41879000" />
     </task>
     <servers />
   </component>

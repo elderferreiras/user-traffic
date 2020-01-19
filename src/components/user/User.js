@@ -10,7 +10,6 @@ const User = (props) => {
             <Card.Content className="user-container">
                 <Avatar {...props}/>
                 <Card.Header>{props.name}</Card.Header>
-
                 <Card.Meta className="user-occupation" data-content={props.occupation}>
                     <Popup
                         trigger={<span>{props.occupation}</span>}
