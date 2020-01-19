@@ -7,24 +7,39 @@ import { Image } from 'semantic-ui-react';
 configure({adapter: new Adapter()});
 
 describe('<Avatar/>', () => {
+    let wrapper;
+
+    beforeEach(() => {
+        wrapper = shallow(<Avatar/>);
+    });
+
     it('should render an empty div', () => {
-        const wrapper = shallow(<Avatar/>);
         expect(wrapper.find('.avatar-initials').exists()).toEqual(true);
         expect(wrapper.find('.avatar-initials').children()).toHaveLength(0);
     });
 
     it('should not render an image', () => {
-        const wrapper = shallow(<Avatar avatar=""/>);
+        wrapper.setProps({
+            avatar: ""
+        });
+
         expect(wrapper.find('div.avatar')).toHaveLength(1);
     });
 
     it('should render an image', () => {
-        const wrapper = shallow(<Avatar avatar="https://picsum.photos/200/300"/>);
+        wrapper.setProps({
+            avatar: "https://picsum.photos/200/300"
+        });
+
         expect(wrapper.find(Image)).toHaveLength(1);
     });
 
     it('should render user\'s first name initial', () => {
-        const wrapper = shallow(<Avatar avatar="" name="Joe Doe"/>);
+        wrapper.setProps({
+            avatar: "",
+            name: "Joe Doe"
+        });
+
         expect(wrapper.find('.avatar-initials').children()).toHaveLength(1);
         expect(wrapper.contains(<div className="avatar-initials">J</div>)).toEqual(true);
     });

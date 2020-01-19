@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46b5edf-ee64-422c-96bd-154e7645dcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/user/Avatar.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/user/User.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/user-traffic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/user-traffic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/Statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Statistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/__tests__/Avatar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/__tests__/Avatar.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +47,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/user/__tests__" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -65,83 +63,83 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.&lt;Avatar/&gt;">
-    <configuration name="&lt;Avatar/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.&lt;Statistics/&gt;">
+    <configuration name="&lt;Statistics/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" />
       <test-names>
-        <test-name value="&lt;Avatar/&gt;" />
+        <test-name value="&lt;Statistics/&gt;" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;Avatar/&gt;.should render an empty div" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Statistics/&gt;.should render all three statistics values &gt;= 0" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" />
       <test-names>
-        <test-name value="&lt;Avatar/&gt;" />
-        <test-name value="should render an empty div" />
+        <test-name value="&lt;Statistics/&gt;" />
+        <test-name value="should render all three statistics values &gt;= 0" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;Avatar/&gt;.should render an image" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Statistics/&gt;.should render all three statistics with zero values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" />
       <test-names>
-        <test-name value="&lt;Avatar/&gt;" />
-        <test-name value="should render an image" />
+        <test-name value="&lt;Statistics/&gt;" />
+        <test-name value="should render all three statistics with zero values" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;Avatar/&gt;.should render user's first name initial after image load failed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Statistics/&gt;.should render plural label for values !== 1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" />
       <test-names>
-        <test-name value="&lt;Avatar/&gt;" />
-        <test-name value="should render user's first name initial after image load failed" />
+        <test-name value="&lt;Statistics/&gt;" />
+        <test-name value="should render plural label for values !== 1" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;Avatar/&gt;.should render user's first name initial" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Statistics/&gt;.should render singular label for values == 1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/user/Avatar.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/user/__tests__/Statistics.test.js" />
       <test-names>
-        <test-name value="&lt;Avatar/&gt;" />
-        <test-name value="should render user's first name initial" />
+        <test-name value="&lt;Statistics/&gt;" />
+        <test-name value="should render singular label for values == 1" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.&lt;Avatar/&gt;" />
-        <item itemvalue="Jest.&lt;Avatar/&gt;.should render user's first name initial after image load failed" />
-        <item itemvalue="Jest.&lt;Avatar/&gt;.should render user's first name initial" />
-        <item itemvalue="Jest.&lt;Avatar/&gt;.should render an empty div" />
-        <item itemvalue="Jest.&lt;Avatar/&gt;.should render an image" />
+        <item itemvalue="Jest.&lt;Statistics/&gt;" />
+        <item itemvalue="Jest.&lt;Statistics/&gt;.should render plural label for values !== 1" />
+        <item itemvalue="Jest.&lt;Statistics/&gt;.should render singular label for values == 1" />
+        <item itemvalue="Jest.&lt;Statistics/&gt;.should render all three statistics values &gt;= 0" />
+        <item itemvalue="Jest.&lt;Statistics/&gt;.should render all three statistics with zero values" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579352577703</updated>
       <workItem from="1579352580303" duration="4586000" />
-      <workItem from="1579357476010" duration="41879000" />
+      <workItem from="1579357476010" duration="43770000" />
     </task>
     <servers />
   </component>

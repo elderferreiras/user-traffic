@@ -3,6 +3,7 @@ import { Segment, Container, Header } from 'semantic-ui-react'
 
 const Footer = () => {
     const fullYear = (new Date()).getFullYear();
+
     return (
         <Segment className="footer" inverted vertical>
             <Container textAlign='center'>
